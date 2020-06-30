@@ -25,20 +25,20 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
        version: 12
-      
-   - name: GitHub Action for Yarn
-     uses: Borales/actions-yarn@v2.3.0
-     with:
+
+    - name: GitHub Action for Yarn
+      uses: Borales/actions-yarn@v2.3.0
+      with:
       # Yarn command
-       cmd: install
-       
-   - name: Creating build
-     run: npm run build
- 
-   - name: Installing surge
-      run: npm install --global surge   
-   - name: Deploying with surge
-      run: surge ./build aree.surge.sh --token ${{secrets.SURGE_TOKEN}}
-        
- 
+        cmd: install
+
+    - name: Creating build
+      run: npm run build
+
+    - name: Installing surge
+       run: npm install --global surge   
+    - name: Deploying with surge
+       run: surge ./build aree.surge.sh --token ${{secrets.SURGE_TOKEN}}
+
+
   

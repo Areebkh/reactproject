@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello Dua</h1>
+      <h1>Hello from Dua and Areeb to all Czns in group</h1>
     </div>
   );
 }

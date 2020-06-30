@@ -36,9 +36,9 @@ jobs:
       run: npm run build
 
     - name: Installing surge
-       run: npm install --global surge   
+      run: npm install --global surge   
     - name: Deploying with surge
-       run: surge ./build aree.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build aree.surge.sh --token ${{secrets.SURGE_TOKEN}}
 
 
   

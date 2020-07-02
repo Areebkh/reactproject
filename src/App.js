@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Student from './students.js';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello from Dua and Areeb to all Czns in group</h1>
+      <Student studentID='5455' studentClass='8th' />
     </div>
   );
 }
